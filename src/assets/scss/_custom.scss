@@ -74,7 +74,10 @@ aside {
 			border: none;
 			color: $white;
 			content: "";
-			top: 38%;
+			/* top: 38%; this didn't work, so using padding-top */
+			padding-top: 2%;
+			/* also, the ::after + was not aligning right, so forcing it with a float instead */
+			float: right;
 			@include breakpoint(large) {
 				content: "+";
 			}
